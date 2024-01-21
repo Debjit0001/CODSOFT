@@ -1,3 +1,6 @@
+# HERE'S A WALKTHROUGH TO MY ENTIRE WORKFLOW :
+# https://www.youtube.com/watch?v=OBU1-VIOwTQ&t=25s&ab_channel=DebjitMahato
+
 import os
 
 # okay so first create a class for the list
@@ -38,7 +41,7 @@ class ToDoList:
 
     # now lets create the display function
     def display_tasks(self):
-        os.system('cls')
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("\n~~:To Do List:~~")
 
         # the tasks should be categorized into pending and completed ones
