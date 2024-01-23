@@ -120,7 +120,7 @@ def main():
             task_index = int(input('\nenter the task index to mark it as done: '))
             toDoList.mark_as_done(task_index)
         elif choice == '4':
-            print('Exiting the program. Goodbye!')
+            print('Exiting the program. Goodbye!\n')
             break
         else:
             print('\nPlease enter a valid choice!')
