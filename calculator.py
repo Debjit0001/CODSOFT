@@ -22,18 +22,16 @@ def calculator():
             num2 = input("\nEnter second number: ")
             try:
                 num2 = float(num2)
+                if num2 == 0 and operator == '/':
+                    print("\nCannot divide by zero!")
+                    input('Press enter to continue...')
+                    continue
             except ValueError:
                 print('\nPlease enter a valid number!')
                 input('Press enter to continue...')
                 continue
 
             print('---------------------------')
-
-            # Checking for division by zero
-            if num2 == 0 and operator == '/':
-                print("Cannot divide by zero!")
-                input('Press enter to continue...')
-                continue
             
             print(f'Result = {eval(str(num1) + operator + str(num2))}')
         else:
