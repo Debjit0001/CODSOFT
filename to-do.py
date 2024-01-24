@@ -75,6 +75,7 @@ class ToDoList:
         
         else:
             print('\nInvalid task index')
+            input('Press enter to continue..')
 
     def remove_task(self, task_type, task_index):
         if task_type == 1:
@@ -85,6 +86,7 @@ class ToDoList:
                 print(f'\ntask {task["description"]} removed from list successfully')
             else:
                 print('\nInvalid task index')
+                input('Press enter to continue..')
         elif task_type == 2:
             completed_tasks = [task for task in self.tasks if task['status']]
             if 1 <= task_index <= len(completed_tasks):
@@ -93,8 +95,10 @@ class ToDoList:
                 print(f'\ntask {task["description"]} removed from list successfully')
             else:
                 print('\nInvalid task index')
+                input('Press enter to continue..')
         else:
             print('\nInvalid choice')
+            input('Press enter to continue..')
         self.save_to_file()
 
     # I think the class is completed, now lets create the main function

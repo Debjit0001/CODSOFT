@@ -48,7 +48,7 @@ def main():
         print('\nRock..', end=" ")
         time.sleep(.5)
         print('Paper..', end=" ")
-        time.sleep(.5)
+        time.sleep(.6)
         print('Scissors.. \n',)
 
         result = determine_winner(user_choice, computer_choice)
